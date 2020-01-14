@@ -49,6 +49,14 @@
     text-align: justify;
   }
 
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: darkgray;
+  }
+
   .contentImage {
       text-align: center;
   }
