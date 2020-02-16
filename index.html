@@ -11,16 +11,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="data/quotes.js"></script>
 </head>
 
 <body style="background-color: #DADAD9">
-    <div class="container-xl border text-white" style="background-color: #36382E">
+    <div class="container border text-white" style="background-color: #36382E">
         <h1 class="display-1">Millan Uka</h1>
     </div>
     <div class="container-xl border text-dark" style="background-color: #68D8D6">
         <div class="container-xl">
-            <a href="https://github.com/MillanUka/"><img src="resources/GitHub.png" class="img-fluid" alt="Github icon"></a>
-            <a href="mailto:ukamillan@gmail.com"><img src="resources/email.svg" class="img-fluid" alt="email icon" width="100px"></a>
+            <a href="https://github.com/MillanUka/"><img src="resources/GitHub.png" class="img-fluid" alt="Github icon" width="75px"></a>
+            <a href="mailto:ukamillan@gmail.com"><img src="resources/email.svg" class="img-fluid" alt="email icon" width="75px"></a>
         </div>
         <h1 class="display-2">
             <u>Projects</u>
@@ -37,7 +38,7 @@
                     <a class="btn btn-primary" href="https://millanuka.github.io/Pokedex/">Try it out</a>
                 </div>
                 <div class="card text-white pt-4" style="background-color: #36382E">
-                    <img class="card-img-top" src="resources/rss.png" alt="Pokedex Icon">
+                    <img class="card-img-top" src="resources/rss.png" alt="RSS Icon">
                     <div class="card-body">
                         <h4 class="card-title">RSS Feed Reader</h4>
                         <p class="card-text">A basic web based RSS feed reader written using HTML, CSS and Javascript. It also uses JQuery and the RSS2Json API.</p>
@@ -70,8 +71,19 @@
             <u>About Me</u>
         </h1>
         <p style="font-size: 24px;">My Name is Millan Uka, I am a student at Auckland University of Technology, studying for a Bachelor of Computer and Information Science (Software Major). I enjoy reading, particularly history and philosophy books.</p>
-        <h1 class="display-2"><u>Blog</u></h1>
+        <div class="container" id="quoteOfTheDay">
+            <h1 class="display-4">
+                Quote of The Day
+            </h1>
+            <br>
+            <blockquote id="quote">
+
+            </blockquote>
+        </div>
     </div>
+    <script>
+        addQuoteToPage();
+    </script>
 </body>
 
 </html>
