@@ -1390,5 +1390,5 @@ function addQuoteToPage() {
 
     var quoteOfTheDay = getQuoteOfTheDay();
     console.log(quoteOfTheDay);
-    quote.innerHTML = quoteOfTheDay.quoteText + " - " + (quoteOfTheDay.quoteAuthor == "" ? "anonymous" : quoteOfTheDay.quoteAuthor);
+    quote.innerHTML = "\"<i>"+ quoteOfTheDay.quoteText + "</i>\" - " + (quoteOfTheDay.quoteAuthor == "" ? "anonymous" : quoteOfTheDay.quoteAuthor);
 }
