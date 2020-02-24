@@ -1,5 +1,12 @@
+body {
+    
+    background-color: #DBE9EE;
+}
 .btn {
     margin-bottom: 1px;
+    background-color: #92AFD7;
+    font-size: 24px;
+    color: #DBE9EE;
 }
 
 .navbar {
@@ -10,6 +17,13 @@
     background-color: white;
 }
 
+#content {
+    background-color: #BEE7E8;
+}
+
+#portfolio {
+    background-color: white;
+}
 blockquote {
     font-size: 24px;
 }
