@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { parse } from 'path';
+
 
 function App() {
+  const [setTestData, testData] = useState({});
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +27,9 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => {}}>
+          Click me
+        </button>
       </header>
     </div>
   );
