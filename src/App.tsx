@@ -1,26 +1,34 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import { parse } from 'path';
-
+import React from "react";
+import "./App.css";
+import { Route, NavLink, BrowserRouter as Router, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
-  const [setTestData, testData] = useState({});
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Test</h1>
-      </header>
+    <Router>
       <div>
-
+        <ul className="navbar">
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/projects">My Projects</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
+        </ul>
+        <div className="content">
+          <Switch>
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
