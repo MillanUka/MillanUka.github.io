@@ -28,7 +28,7 @@ function App() {
             </ul>
           </div>
         </nav>
-        <div className="main">
+        <div className="container">
           <Switch>
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />

@@ -1,23 +1,11 @@
 import React from "react";
-import { splitArray } from "../utils";
-import { relative } from "path";
-const spotlightProjects: Project[] = require("./spotlight_project_data.json");
 const projects: Project[] = require("./project_data.json");
 
-const spotlightProjectsArr = splitArray(spotlightProjects, 4);
-const projectsArr = splitArray(projects, 4);
 function Projects() {
   return (
     <div className="container">
       <h2>My Projects!</h2>
-      <h3>Spotlight</h3>
-      {spotlightProjectsArr.map((projects: Project[]) => {
-        return <div className="row">{renderProjects(projects)}</div>;
-      })}
-      <h3>Other Projects</h3>
-      {projectsArr.map((projects: Project[]) => {
-        return <div className="row">{renderProjects(projects)}</div>;
-      })}
+      <div className="row">{renderProjects(projects)}</div>
     </div>
   );
 }
@@ -36,25 +24,25 @@ function renderProjects(projects: Project[]) {
     <div>
       {projects.map((project: Project) => {
         return (
-          <div className="column" key={project.name}>
-            <div className="card">
-              <img
-                src={project.thumbnail}
-                alt={project.name}
-                style={{ width: "100%" }}
-              ></img>
-              <h3>{project.name}</h3>
-              <p>{project.desc}</p>
-            </div>
-            <div className="group">
+          <div className="card" key={project.name} style={{padding: "10px", marginBottom: "5px", border: "2px solid black"}}>
+            <img
+              className="card-img-top"
+              src={project.thumbnail}
+              alt={project.name}
+              style={{ width: "100%" }}
+            ></img>
+
+            <div className="card-body">
+              <h5 className="card-title">{project.name}</h5>
+              <p className="card-text">{project.desc}</p>
               {project.github_link !== null && (
-                <a href={project.github_link} target="_blank">
+                <a href={project.github_link} className="btn btn-primary"  style={{width: "100%", fontSize: "xx-large"}} target="_blank">
                   View on Github
                 </a>
               )}
               <br />
               {project.hosted_link !== null && (
-                <a href={project.hosted_link} target="_blank">
+                <a href={project.hosted_link} className="btn btn-primary" style={{width: "100%", fontSize: "xx-large"}} target="_blank">
                   Try it out!
                 </a>
               )}

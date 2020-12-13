@@ -1,0 +1,41 @@
+[
+    {
+        "name" : "C/C++"
+    },
+    {
+        "name" : "C#"
+    },
+    {
+        "name" : "Java"
+    },
+    {
+        "name" : "SQL"
+    },
+    {
+        "name" : "JavaScript"
+    },
+    {
+        "name" : "TypeScript"
+    },
+    {
+        "name" : "HTML/CSS"
+    },
+    {
+        "name" : "PHP"
+    },
+    {
+        "name" : "Python"
+    },
+    {
+        "name" : "MATLAB"
+    },
+    {
+        "name" : "R"
+    },
+    {
+        "name" : "Shell"
+    },
+    {
+        "name" : "LaTex"
+    }
+]
