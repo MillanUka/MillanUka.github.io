@@ -8,7 +8,7 @@ const spotlightProjectsArr = splitArray(spotlightProjects, 4);
 const projectsArr = splitArray(projects, 4);
 function Projects() {
   return (
-    <div style={{margin: "auto"}}>
+    <div className="container">
       <h2>My Projects!</h2>
       <h3>Spotlight</h3>
       {spotlightProjectsArr.map((projects: Project[]) => {

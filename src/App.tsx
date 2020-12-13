@@ -1,25 +1,33 @@
 import React from "react";
-import "./App.css";
-import { Route, NavLink, BrowserRouter as Router, Switch } from "react-router-dom";
+import {
+  Route,
+  NavLink,
+  BrowserRouter as Router,
+  Switch,
+} from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <Router>
       <div>
-        <ul className="navbar">
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects">My Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <NavLink to="/" className="nav-link">Home</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/projects" className="nav-link">My Projects</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/contact" className="nav-link">Contact</NavLink>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div className="main">
           <Switch>
             <Route path="/projects" component={Projects} />
