@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "Ecommerce Website",
+        "desc" : "An Ecommerce website made using Angular and TypeScript for the frontend and Express and JavaScript for the backend. The backend serve REST calls that come in from the frontend.",
+        "thumbnail" : "/thumbnails/none.png",
+        "github_link" : "https://github.com/MillanUka/ecommerce-backend",
+        "hosted_link" : null,
+        "tags" : ["TypeScript", "Angular", "Express", "JavaScript", "REST API"]
+    },
+    {
+        "name" : "RSS Feed reader",
+        "desc" : "A basic web based RSS feed reader written using HTML, CSS and Javascript. It also uses JQuery and the RSS2Json API.",
+        "thumbnail" : "/thumbnails/rss-feed-reader.png",
+        "github_link" : "https://github.com/MillanUka/RSS-Feed-Reader",
+        "hosted_link" : "https://millanuka.github.io/RSS-Feed-Reader/",
+        "tags" : ["HTML", "CSS", "JavaScript", "JQuery"]
+    }
+]

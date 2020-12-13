@@ -20,7 +20,7 @@ function App() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
-        <div className="content">
+        <div className="main">
           <Switch>
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
