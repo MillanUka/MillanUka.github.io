@@ -15,11 +15,6 @@ function Home() {
         I also enjoy reading. In particular I enjoy books involving Computer
         Science, History, Economics and Urban Planning.
       </p>
-      <h5>
-        <a href="/projects">Projects</a>
-        <br />
-        <a href="/socials">Socials</a>
-      </h5>
       <h2>Contact me</h2>
       <Contact />
     </div>

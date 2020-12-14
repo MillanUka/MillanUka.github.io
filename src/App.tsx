@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <NavLink to="/" className="nav-link">Home</NavLink>
