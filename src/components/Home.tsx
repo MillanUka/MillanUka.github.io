@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 const languages: Language[] = require("./languages.json");
 
 function Home() {
@@ -19,8 +20,10 @@ function Home() {
       <h5>
         <a href="/projects">Projects</a>
         <br />
-        <a href="/contact">Contact me</a>
+        <a href="/socials">Socials</a>
       </h5>
+      <h2>Contact me</h2>
+      <Contact />
       <h2>Languages</h2>
       <div>
         <ul
@@ -46,16 +49,7 @@ type Language = {
 function renderLanguages(languages: Language[]) {
   return languages.map((language) => {
     return (
-      <a
-        className="list-group-item list-group-item-action"
-        id="list-profile-list"
-        data-toggle="list"
-        href="#list-profile"
-        role="tab"
-        aria-controls="profile"
-      >
-        {language.name}
-      </a>
+      <li className="list-group-item">{language.name}</li>
     );
   });
 }
