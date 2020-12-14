@@ -18,7 +18,7 @@ export async function appendSpreadsheet (response: UserResponse) {
     await doc.useServiceAccountAuth({client_email: CLIENT_EMAIL, private_key: PRIVATE_KEY});
     await doc.loadInfo();
     const sheet = doc.sheetsById[SHEET_ID];
-    const result = await sheet.addRow({name: response.name, email: response.email, message: response.email, time: new Date().toISOString()});
+    const result = await sheet.addRow({name: response.name, email: response.email, message: response.message, time: new Date().toISOString()});
     if(result) {
       alert("Your message was successfully recieved.");
     }
