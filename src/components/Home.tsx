@@ -1,22 +1,30 @@
-import React from "react";
-import Contact from "./Contact";
 function Home() {
   return (
-    <div className="container">
-      <h1>Welcome!</h1>
+
+    <div className="container-xl">
       <br />
-      <h2>About Me</h2>
-      <p style={{ textAlign: "justify", fontSize: "20px" }}>
-        Hi. I'm Millan. I have recently finished studying a Bachelor of Computer
-        and Information Science at Auckland University of Technology with a
-        major in software development.
+      <p style={{ fontSize: "20px" }}>
+        I'm a Software Engineer based in Auckland, New Zealand.
       </p>
-      <p style={{ textAlign: "justify", fontSize: "20px" }}>
-        I also enjoy reading. In particular I enjoy books involving Computer
-        Science, History, Economics and Urban Planning.
+      <p style={{ fontSize: "20px" }}>
+        I enjoy reading philosophy, especially Metaphysics, Epistemology and Philosophy of Mathematics.
       </p>
-      <h2>Contact me</h2>
-      <Contact />
+      <div className="container-xs">
+        <h4>Socials</h4>
+        <ul className="list-group">
+          <h6>
+            <li className="list-group-item">
+              <a href="https://github.com/MillanUka" target="_blank">Github</a>
+            </li>
+            <li className="list-group-item">
+              <a href="https://www.linkedin.com/in/millanuka/" target="_blank">Linkedin</a>
+            </li>
+            <li className="list-group-item">
+              <a href="https://www.twitter.com/MillanUka" target="_blank">Twitter</a>
+            </li>
+          </h6>
+        </ul>
+      </div>
     </div>
   );
 }
