@@ -4,10 +4,7 @@ function Home() {
     <div className="container-xl">
       <br />
       <p style={{ fontSize: "20px" }}>
-        I'm a Software Engineer based in Auckland, New Zealand.
-      </p>
-      <p style={{ fontSize: "20px" }}>
-        I enjoy reading philosophy, especially Metaphysics, Epistemology and Philosophy of Mathematics.
+        I'm a Full Stack Software Engineer based in Auckland, New Zealand.  
       </p>
       <div className="container-xs">
         <h4>Socials</h4>
@@ -18,9 +15,6 @@ function Home() {
             </li>
             <li className="list-group-item">
               <a href="https://www.linkedin.com/in/millanuka/" target="_blank">Linkedin</a>
-            </li>
-            <li className="list-group-item">
-              <a href="https://www.twitter.com/MillanUka" target="_blank">Twitter</a>
             </li>
           </h6>
         </ul>
