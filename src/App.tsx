@@ -1,10 +1,11 @@
-import { Flex, Text, Button, Container, Heading, Link } from "@radix-ui/themes";
+import { Flex, Text, Container, Heading, Link } from "@radix-ui/themes";
+import "./App.css";
 
 export default function App() {
   return (
-    <Container>
+    <Container className="App">
       <Flex direction="column" gap="2">
-      <Heading as="h1" size="8">
+      <Heading as="h1" size="8" style={{fontFamily: 'montserrat'}}>
           Millan Uka
         </Heading>
         <Text>
